@@ -23,7 +23,11 @@ target_sources(${APP_TARGET}
         main.cpp
 )
 
-target_link_libraries(${APP_TARGET} mbed-os)
+target_link_libraries(${APP_TARGET}
+    mbed-os
+    mbed-os-device_key
+    mbed-os-mbedtls
+)
 
 mbed_generate_bin_hex(${APP_TARGET})
 
