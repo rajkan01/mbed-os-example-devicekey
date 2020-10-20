@@ -25,6 +25,7 @@ target_sources(${APP_TARGET}
 
 target_link_libraries(${APP_TARGET}
     mbed-os
+    mbed-os-storage-qspif
     mbed-os-device_key
     mbed-os-mbedtls
 )
